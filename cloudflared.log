@@ -1,0 +1,270 @@
+2026-01-15T14:41:04Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-15T14:41:04Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-15T14:41:08Z INF +--------------------------------------------------------------------------------------------+
+2026-01-15T14:41:08Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-15T14:41:08Z INF |  https://point-unlimited-neil-portrait.trycloudflare.com                                   |
+2026-01-15T14:41:08Z INF +--------------------------------------------------------------------------------------------+
+2026-01-15T14:41:08Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-15T14:41:08Z INF Version 2025.11.1 (Checksum 991dffd8889ee9f0147b6b48933da9e4407e68ea8c6d984f55fa2d3db4bb431d)
+2026-01-15T14:41:08Z INF GOOS: linux, GOVersion: go1.24.9, GoArch: amd64
+2026-01-15T14:41:08Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:3000]
+2026-01-15T14:41:08Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-15T14:41:08Z INF Generated Connector ID: d7ef7cb9-39fe-4db6-ba06-1a3cbbc54b14
+2026-01-15T14:41:08Z INF Initial protocol quic
+2026-01-15T14:41:08Z INF ICMP proxy will use 192.168.108.208 as source for IPv4
+2026-01-15T14:41:08Z INF ICMP proxy will use fe80::4929:54ba:c924:7cc0 in zone ens33 as source for IPv6
+2026-01-15T14:41:08Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+2026-01-15T14:41:08Z INF ICMP proxy will use 192.168.108.208 as source for IPv4
+2026-01-15T14:41:08Z INF ICMP proxy will use fe80::4929:54ba:c924:7cc0 in zone ens33 as source for IPv6
+2026-01-15T14:41:08Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-15T14:41:08Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026/01/15 17:41:08 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+2026-01-15T14:41:09Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.33
+2026-01-15T14:41:09Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.33
+2026-01-15T14:41:10Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.233
+2026-01-15T14:41:10Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.233
+2026-01-15T14:41:10Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.233
+2026-01-15T14:41:12Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.63
+2026-01-15T14:41:12Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.63
+2026-01-15T14:41:12Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.63
+2026-01-15T14:41:12Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T14:41:12Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T14:41:12Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T14:41:19Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-01-15T14:41:19Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.53
+2026-01-15T14:41:19Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.53
+2026-01-15T14:41:44Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-01-15T14:41:45Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.193
+2026-01-15T14:41:45Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.193
+2026-01-15T14:42:14Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.73
+2026-01-15T14:42:14Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.73
+2026-01-15T14:42:14Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.73
+2026-01-15T14:42:30Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T14:42:32Z INF Registered tunnel connection connIndex=0 connection=0acc0338-46d0-48a5-affb-0c2f7de6389d event=0 ip=198.41.192.227 location=mba02 protocol=quic
+2026-01-15T14:43:21Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-01-15T14:43:21Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 dest=https://point-unlimited-neil-portrait.trycloudflare.com/ event=0 ip=198.41.192.227 type=http
+2026-01-15T14:43:22Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-01-15T14:43:22Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 dest=https://point-unlimited-neil-portrait.trycloudflare.com/favicon.ico event=0 ip=198.41.192.227 type=http
+2026-01-15T14:46:14Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-01-15T14:46:14Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 dest=https://point-unlimited-neil-portrait.trycloudflare.com/api/auth/login event=0 ip=198.41.192.227 type=http
+2026-01-15T14:46:39Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-01-15T14:46:39Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 dest=https://point-unlimited-neil-portrait.trycloudflare.com/api/auth/login event=0 ip=198.41.192.227 type=http
+2026-01-15T14:47:00Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-01-15T14:47:00Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 dest=https://point-unlimited-neil-portrait.trycloudflare.com/api/auth/register event=0 ip=198.41.192.227 type=http
+2026-01-15T14:47:17Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-01-15T14:47:17Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 dest=https://point-unlimited-neil-portrait.trycloudflare.com/api/auth/register event=0 ip=198.41.192.227 type=http
+2026-01-15T14:48:18Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:3000
+2026-01-15T14:48:18Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:3000: connect: connection refused" connIndex=0 dest=https://point-unlimited-neil-portrait.trycloudflare.com/api/auth/login event=0 ip=198.41.192.227 type=http
+2026-01-15T14:51:13Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-15T19:33:36Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T19:33:36Z ERR failed to run the datagram handler error="context canceled" connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T19:33:36Z WRN failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T19:33:36Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T19:33:36Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T19:33:38Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2026-01-15T19:33:41Z INF Registered tunnel connection connIndex=0 connection=e0d2d7fa-3b03-48c0-840c-b8c354e38ae2 event=0 ip=198.41.192.227 location=mba02 protocol=quic
+2026-01-16T04:31:21Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T04:41:26Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T05:01:31Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T05:03:01Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:03:01Z ERR failed to run the datagram handler error="timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:03:01Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:03:01Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:03:01Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:03:02Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:03:03Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.192.227:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:03:03Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:03:07Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-01-16T05:03:07Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.33:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.33
+2026-01-16T05:03:07Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.33
+2026-01-16T05:03:08Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-01-16T05:03:08Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.53:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.53
+2026-01-16T05:03:08Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.200.53
+2026-01-16T05:03:11Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-01-16T05:03:11Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.192.47:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.47
+2026-01-16T05:03:11Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.192.47
+2026-01-16T05:03:33Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:03:33Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.192.7:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:03:33Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:03:54Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.167
+2026-01-16T05:03:54Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.192.167:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.167
+2026-01-16T05:03:54Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.167
+2026-01-16T05:03:57Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-01-16T05:03:57Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.53:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.53
+2026-01-16T05:03:57Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.53
+2026-01-16T05:04:25Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:04:25Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.23:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:04:25Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:04:27Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:04:27Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.73:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:04:27Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:04:50Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.43
+2026-01-16T05:04:50Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.43:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.43
+2026-01-16T05:04:50Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.43
+2026-01-16T05:05:08Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-01-16T05:05:08Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.33:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.33
+2026-01-16T05:05:08Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.33
+2026-01-16T05:09:50Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:09:50Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.23:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:09:50Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:10:08Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.167
+2026-01-16T05:10:10Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.167
+2026-01-16T05:10:10Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.167
+2026-01-16T05:10:28Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:10:29Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:10:29Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:10:40Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:10:40Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:10:40Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:11:04Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-01-16T05:11:05Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.33
+2026-01-16T05:11:05Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.33
+2026-01-16T05:11:20Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:11:22Z INF Registered tunnel connection connIndex=0 connection=30a8309e-10c5-4ac9-a3aa-932773bf6f63 event=0 ip=198.41.192.57 location=mba02 protocol=quic
+2026-01-16T05:13:44Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: write udp [::]:32853->198.41.192.57:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:13:44Z ERR failed to run the datagram handler error="write udp [::]:32853->198.41.192.57:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:13:44Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:13:44Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:13:44Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:13:45Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:13:45Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.192.57:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:13:45Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.57
+2026-01-16T05:13:45Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:13:45Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.23:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:13:45Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.23
+2026-01-16T05:13:47Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:13:47Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.192.227:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:13:47Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.192.227
+2026-01-16T05:13:52Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:13:52Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.192.7:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:13:52Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:13:55Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026-01-16T05:14:00Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.37
+2026-01-16T05:14:00Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.37
+2026-01-16T05:14:13Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:14:15Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:14:15Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:14:22Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-01-16T05:14:22Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.107
+2026-01-16T05:14:22Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.107
+2026-01-16T05:14:43Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:14:44Z INF Registered tunnel connection connIndex=0 connection=60dbe7ae-7ee3-46c2-8b5b-bc058fbb9f45 event=0 ip=198.41.200.73 location=dur01 protocol=quic
+2026-01-16T05:43:39Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: write udp [::]:32853->198.41.200.73:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:43:39Z ERR failed to run the datagram handler error="write udp [::]:32853->198.41.200.73:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:43:39Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:43:39Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:43:39Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:43:40Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:43:40Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.73:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:43:40Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:43:44Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-01-16T05:43:44Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.113:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.113
+2026-01-16T05:43:44Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.113
+2026-01-16T05:43:49Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.233
+2026-01-16T05:43:49Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.233:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.233
+2026-01-16T05:43:49Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.200.233
+2026-01-16T05:44:04Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.67
+2026-01-16T05:44:04Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.67
+2026-01-16T05:44:04Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.192.67
+2026-01-16T05:44:27Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-01-16T05:44:28Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.113
+2026-01-16T05:44:28Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-01-16T05:44:49Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-01-16T05:44:50Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.47
+2026-01-16T05:44:50Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.47
+2026-01-16T05:45:13Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:45:13Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:45:13Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:45:27Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:45:27Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:45:27Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.73
+2026-01-16T05:45:56Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.167
+2026-01-16T05:45:56Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.167
+2026-01-16T05:45:56Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.167
+2026-01-16T05:46:12Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-01-16T05:46:12Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.53
+2026-01-16T05:46:12Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.53
+2026-01-16T05:46:24Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026-01-16T05:46:26Z INF Registered tunnel connection connIndex=0 connection=12d066bc-47a1-4b8f-bc8a-a087feead856 event=0 ip=198.41.192.7 location=mba02 protocol=quic
+2026-01-16T08:09:59Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T08:30:04Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T08:55:10Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T10:05:15Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T10:20:20Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T10:25:25Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T10:45:30Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T11:15:35Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-16T22:00:42Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-17T06:15:15Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.7
+2026-01-17T06:15:15Z ERR failed to run the datagram handler error="timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.7
+2026-01-17T06:15:15Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.7
+2026-01-17T06:15:15Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.7
+2026-01-17T06:15:15Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.7
+2026-01-17T06:15:15Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026-01-17T06:15:18Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.192.7:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.192.7
+2026-01-17T06:15:18Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.7
+2026-01-17T06:15:21Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-01-17T06:15:21Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.23:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.23
+2026-01-17T06:15:21Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.23
+2026-01-17T06:15:26Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2026-01-17T06:15:27Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.27
+2026-01-17T06:15:27Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.192.27
+2026-01-17T06:15:29Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2026-01-17T06:15:29Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.227
+2026-01-17T06:15:29Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.192.227
+2026-01-17T06:15:46Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.63
+2026-01-17T06:15:46Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.63
+2026-01-17T06:15:46Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.63
+2026-01-17T06:16:17Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.167
+2026-01-17T06:16:17Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.167
+2026-01-17T06:16:17Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.167
+2026-01-17T06:16:20Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-01-17T06:16:20Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.113
+2026-01-17T06:16:20Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-01-17T06:16:49Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.67
+2026-01-17T06:16:49Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.67
+2026-01-17T06:16:49Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.67
+2026-01-17T06:17:05Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2026-01-17T06:17:05Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.13
+2026-01-17T06:17:05Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.13
+2026-01-17T06:17:29Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-01-17T06:17:29Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.47
+2026-01-17T06:17:29Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.47
+2026-01-17T06:17:56Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2026-01-17T06:17:57Z INF Registered tunnel connection connIndex=0 connection=048bcafe-2057-4b57-a5d9-e3c989cdcdaf event=0 ip=198.41.200.13 location=jnb04 protocol=quic
+2026-01-19T04:50:55Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-19T05:01:00Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-19T05:16:05Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-19T09:11:47Z ERR failed to accept incoming stream requests error="failed to accept QUIC stream: write udp [::]:32853->198.41.200.13:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.13
+2026-01-19T09:11:47Z ERR failed to run the datagram handler error="write udp [::]:32853->198.41.200.13:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.13
+2026-01-19T09:11:47Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.13
+2026-01-19T09:11:47Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.13
+2026-01-19T09:11:47Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.13
+2026-01-19T09:11:48Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2026-01-19T09:11:48Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: write udp [::]:32853->198.41.200.13:7844: sendmsg: network is unreachable" connIndex=0 event=0 ip=198.41.200.13
+2026-01-19T09:11:48Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.13
+2026-01-19T09:11:49Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-01-19T09:11:49Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.57
+2026-01-19T09:11:49Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.192.57
+2026-01-19T09:11:53Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-01-19T09:11:53Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.33
+2026-01-19T09:11:53Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.200.33
+2026-01-19T09:12:04Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2026-01-19T09:12:04Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.227
+2026-01-19T09:12:04Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.192.227
+2026-01-19T09:12:05Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-01-19T09:12:05Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.23
+2026-01-19T09:12:05Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.23
+2026-01-19T09:12:07Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.167
+2026-01-19T09:12:07Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.192.167
+2026-01-19T09:12:07Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.167
+2026-01-19T09:12:12Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-01-19T09:12:12Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: CRYPTO_ERROR 0x178 (remote): tls: no application protocol" connIndex=0 event=0 ip=198.41.200.113
+2026-01-19T09:12:12Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.200.113
+2026-01-19T09:12:30Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.167
+2026-01-19T09:12:32Z INF Registered tunnel connection connIndex=0 connection=cadf318c-69e3-49db-ba11-c2f31b122813 event=0 ip=198.41.192.167 location=nbo04 protocol=quic
+2026-01-19T12:11:13Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-19T12:16:18Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-19T12:31:23Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-19T12:46:28Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-19T12:56:33Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"

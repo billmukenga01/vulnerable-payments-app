@@ -1,10 +1,13 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://vulnerable-payments-app.onrender.com/api',
+    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api',
 });
 
 api.interceptors.request.use((config) => {
+    // Debug logging
+    console.log(`[API Request] ${config.method?.toUpperCase()} ${config.baseURL}${config.url}`, config.data);
+
     const token = localStorage.getItem('token');
     if (token) {
         config.headers.Authorization = `Bearer ${token}`;

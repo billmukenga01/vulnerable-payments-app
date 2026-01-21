@@ -1,0 +1,78 @@
+Target: https://pleasant-building-app-thoughts.trycloudflare.com/api/auth/login
+--- TEST 1: Null Origin ---
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 404 
+date: Fri, 16 Jan 2026 12:25:59 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+cf-ray: 9bed993f2ac2ea52-FCO
+cf-cache-status: DYNAMIC
+access-control-allow-origin: null
+strict-transport-security: max-age=31536000; includeSubDomains
+vary: Origin
+access-control-allow-credentials: true
+content-security-policy: default-src 'none'
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+
+
+--- TEST 2: Regex Origin ---
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 404 
+date: Fri, 16 Jan 2026 12:26:01 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+cf-ray: 9bed994969af8a49-NBO
+cf-cache-status: DYNAMIC
+access-control-allow-origin: https://evil-trycloudflare.com
+strict-transport-security: max-age=31536000; includeSubDomains
+vary: Origin
+access-control-allow-credentials: true
+content-security-policy: default-src 'none'
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+
+
+--- TEST 3: Blocked Origin ---
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 404 
+date: Fri, 16 Jan 2026 12:26:02 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+cf-ray: 9bed9954790a8a3f-NBO
+cf-cache-status: DYNAMIC
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: default-src 'none'
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+

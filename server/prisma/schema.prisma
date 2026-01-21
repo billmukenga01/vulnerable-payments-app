@@ -18,6 +18,15 @@ model User {
   balance   Float    @default(0.0)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  
+  otp        String?
+  otpExpires DateTime?
+  
+  // OAuth fields
+  oauthProvider  String?
+  oauthId        String?
+  oauthEmail     String?
+  emailVerified  Boolean @default(false)
 
   sentTransactions     Transaction[] @relation("SentTransactions")
   receivedTransactions Transaction[] @relation("ReceivedTransactions")

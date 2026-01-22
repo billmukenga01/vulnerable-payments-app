@@ -3,3 +3,10 @@ dist
 .env
 .DS_Store
 coverage
+
+# Cloudflared tunnel logs (contain active URLs)
+*_tunnel.log
+backend_tunnel.log
+frontend_tunnel.log
+cloudflared-client.log
+cloudflared.log

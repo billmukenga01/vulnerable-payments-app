@@ -33,3 +33,6 @@
 2026-01-21T12:49:17Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: read tcp [::1]:59672->[::1]:5173: read: connection reset by peer" connIndex=0 event=1 ingressRule=0 originService=http://localhost:5173
 2026-01-21T12:49:17Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: read tcp [::1]:59672->[::1]:5173: read: connection reset by peer" connIndex=0 dest=https://webcast-hart-biz-sensitive.trycloudflare.com/favicon.ico event=0 ip=198.41.192.47 type=http
 2026-01-21T13:18:46Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-21T13:48:51Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-22T04:44:05Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-01-22T05:09:10Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"

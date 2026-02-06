@@ -14,6 +14,16 @@ This project demonstrates common web application vulnerabilities found in real-w
 - Understanding common authentication flaws
 - Learning secure coding practices by example
 
+## 📊 Vulnerability Summary
+
+**Total Vulnerabilities Implemented: 61**
+
+- Authentication & Authorization: 57 vulnerabilities
+- Infrastructure Security: 6 vulnerabilities
+- CORS Misconfigurations: 3 vulnerabilities
+
+All vulnerabilities are based on real HackerOne reports, OWASP guidelines, and security research from 2023-2024.
+
 ## 🔓 Implemented Vulnerabilities
 
 ### Authentication & Authorization
@@ -45,6 +55,57 @@ This project demonstrates common web application vulnerabilities found in real-w
   - Race conditions
   - Host header injection
 
+- **JWT Vulnerabilities** (5 vulnerabilities) 🆕
+  - None algorithm bypass
+  - Weak JWT secret (brute-forceable)
+  - Algorithm confusion (RS256 → HS256)
+  - kid SQL injection
+  - kid path traversal
+
+- **Session Management** (4 vulnerabilities) 🆕
+  - Session fixation
+  - Predictable session IDs
+  - No session invalidation on logout
+  - No session invalidation on password change
+
+- **Advanced 2FA Bypasses** (3 vulnerabilities)
+  - Blank/null OTP bypass
+  - OAuth login bypasses 2FA
+  - Session persistence after 2FA activation
+
+- **Additional Auth Bypasses** (3 vulnerabilities)
+  - Password reset poisoning (host header injection)
+  - Account lockout bypass via case sensitivity
+  - Credential stuffing (no global rate limiting)
+
+- **Advanced OTP/2FA Bypasses** (8 vulnerabilities) 🆕
+  - Account deactivation → password reset bypass
+  - Reusable OTP (no invalidation after use)
+  - Email OTP bypass via early session cookie
+  - 2FA bypass via cookie deletion
+  - Expired TOTP code acceptance
+  - Bypassing phone number OTP in account recovery
+  - 2FA race condition (multiple reset requests)
+  - OTP brute force via session ID rotation
+
+- **Email Verification Bypasses** (4 vulnerabilities) 🆕
+  - Email verification API endpoint bypass
+  - Email change without re-verification
+  - Email verification race condition
+  - Front-end only email verification
+
+- **Password Reset Flaws** (4 vulnerabilities) 🆕
+  - Multiple valid reset tokens
+  - Password reset race condition
+  - 0-click account takeover via reset flaw
+  - Password reset token in URL (Referer leakage)
+
+- **Rate Limiting Bypasses** (4 vulnerabilities) 🆕
+  - Rate limit bypass via X-Forwarded-For
+  - Rate limit bypass via User-Agent rotation
+  - Rate limit bypass via parameter pollution
+  - Rate limit bypass via HTTP method switching
+
 ### Infrastructure
 - **Container Security Issues**
   - Containers run as root
@@ -61,9 +122,20 @@ This project demonstrates common web application vulnerabilities found in real-w
 
 All vulnerabilities are thoroughly documented in the `project-documentation/` folder:
 
+### Authentication Vulnerabilities
 - **[OTP_VULNERABILITIES.md](project-documentation/OTP_VULNERABILITIES.md)** - OTP/2FA bypass techniques
 - **[OAUTH_VULNERABILITIES.md](project-documentation/OAUTH_VULNERABILITIES.md)** - OAuth authentication flaws
 - **[AUTH_BUSINESS_LOGIC_FLAWS.md](project-documentation/AUTH_BUSINESS_LOGIC_FLAWS.md)** - Authentication business logic issues
+- **[JWT_VULNERABILITIES.md](project-documentation/JWT_VULNERABILITIES.md)** - JWT security flaws
+- **[SESSION_VULNERABILITIES.md](project-documentation/SESSION_VULNERABILITIES.md)** - Session management issues
+- **[ADVANCED_2FA_BYPASSES.md](project-documentation/ADVANCED_2FA_BYPASSES.md)** - Advanced 2FA bypass techniques
+- **[AUTHENTICATION_BYPASSES.md](project-documentation/AUTHENTICATION_BYPASSES.md)** - Additional auth bypass methods
+- **[ADVANCED_OTP_BYPASSES.md](project-documentation/ADVANCED_OTP_BYPASSES.md)** - Advanced OTP/2FA bypasses (8 vulnerabilities) 🆕
+- **[EMAIL_VERIFICATION_BYPASSES.md](project-documentation/EMAIL_VERIFICATION_BYPASSES.md)** - Email verification bypass techniques (4 vulnerabilities) 🆕
+- **[PASSWORD_RESET_FLAWS.md](project-documentation/PASSWORD_RESET_FLAWS.md)** - Password reset vulnerabilities (4 vulnerabilities) 🆕
+- **[RATE_LIMITING_BYPASSES.md](project-documentation/RATE_LIMITING_BYPASSES.md)** - Rate limiting bypass techniques (4 vulnerabilities) 🆕
+
+### Infrastructure & Concepts
 - **[TUNNEL_EXPLANATION.md](project-documentation/TUNNEL_EXPLANATION.md)** - How Cloudflare tunnels work
 - **[security_concepts.md](project-documentation/security_concepts.md)** - Security concepts overview
 

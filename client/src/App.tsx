@@ -6,6 +6,10 @@ import SendMoney from './pages/SendMoney';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import OAuthCallback from './pages/OAuthCallback';
+import AdvancedOTPBypass from './pages/AdvancedOTPBypass';
+import EmailVerificationBypass from './pages/EmailVerificationBypass';
+import PasswordResetFlaws from './pages/PasswordResetFlaws';
+import RateLimitingBypass from './pages/RateLimitingBypass';
 
 function App() {
   return (
@@ -18,6 +22,13 @@ function App() {
         <Route path="/oauth/callback" element={<OAuthCallback />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/send" element={<SendMoney />} />
+
+        {/* Vulnerability Test Pages */}
+        <Route path="/test/advanced-otp-bypass" element={<AdvancedOTPBypass />} />
+        <Route path="/test/email-verification-bypass" element={<EmailVerificationBypass />} />
+        <Route path="/test/password-reset-flaws" element={<PasswordResetFlaws />} />
+        <Route path="/test/rate-limiting-bypass" element={<RateLimitingBypass />} />
+
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
       </Routes>
     </Router>

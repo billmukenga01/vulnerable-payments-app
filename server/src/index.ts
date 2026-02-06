@@ -49,12 +49,16 @@ import userRoutes from './routes/user.routes';
 import transactionRoutes from './routes/transaction.routes';
 import oauthRoutes from './routes/oauth.routes';
 import mockOAuthRoutes from './routes/mock-oauth.routes';
+import jwtSessionRoutes from './routes/jwt-session.routes';
+import additionalAuthRoutes from './routes/additional-auth.routes';
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/transactions', transactionRoutes);
 app.use('/api/oauth', oauthRoutes);
 app.use('/mock-oauth', mockOAuthRoutes);
+app.use('/api/jwt-session', jwtSessionRoutes);
+app.use('/api/additional-auth', additionalAuthRoutes);
 
 app.get('/', (req, res) => {
     res.json({ message: 'Payments API is running' });

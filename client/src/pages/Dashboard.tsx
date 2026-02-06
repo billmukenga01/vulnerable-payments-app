@@ -57,6 +57,48 @@ export default function Dashboard() {
                 </Card>
             </div>
 
+            {/* Vulnerability Testing Section */}
+            <Card>
+                <CardHeader>
+                    <CardTitle>🔓 Vulnerability Testing</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-sm text-muted-foreground mb-4">
+                        Test 20 authentication vulnerabilities through interactive UI forms
+                    </p>
+                    <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+                        <Button
+                            variant="outline"
+                            onClick={() => navigate('/test/advanced-otp-bypass')}
+                            className="w-full"
+                        >
+                            Advanced OTP Bypasses (8)
+                        </Button>
+                        <Button
+                            variant="outline"
+                            onClick={() => navigate('/test/email-verification-bypass')}
+                            className="w-full"
+                        >
+                            Email Verification (4)
+                        </Button>
+                        <Button
+                            variant="outline"
+                            onClick={() => navigate('/test/password-reset-flaws')}
+                            className="w-full"
+                        >
+                            Password Reset Flaws (4)
+                        </Button>
+                        <Button
+                            variant="outline"
+                            onClick={() => navigate('/test/rate-limiting-bypass')}
+                            className="w-full"
+                        >
+                            Rate Limiting (4)
+                        </Button>
+                    </div>
+                </CardContent>
+            </Card>
+
             <div className="grid gap-4 md:grid-cols-1">
                 <Card>
                     <CardHeader>
